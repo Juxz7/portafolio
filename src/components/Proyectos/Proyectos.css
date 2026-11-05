@@ -1,0 +1,73 @@
+.proyectos {
+  background: var(--bg-alt);
+}
+
+.proyectos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 1.3rem;
+}
+
+.proyecto-card {
+  display: flex;
+  flex-direction: column;
+  padding: 1.6rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 17px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.proyecto-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent-2);
+}
+
+.proyecto-indice {
+  color: var(--accent-2);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+}
+
+.proyecto-card h3 {
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+}
+
+.proyecto-card p {
+  flex: 1;
+  color: var(--muted);
+  font-size: 0.93rem;
+}
+
+.proyecto-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  margin: 1.1rem 0;
+}
+
+.proyecto-tags span {
+  padding: 0.2rem 0.7rem;
+  border-radius: 99px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  font-size: 0.75rem;
+}
+
+.proyecto-boton {
+  align-self: flex-start;
+  padding: 0.55rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+.proyecto-boton:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}

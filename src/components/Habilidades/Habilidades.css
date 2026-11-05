@@ -1,0 +1,66 @@
+.habilidades-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+  gap: 1.1rem;
+}
+
+.habilidad-card {
+  padding: 1.4rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  transition: transform 0.2s, border-color 0.2s;
+}
+
+.habilidad-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(255, 181, 71, 0.5);
+}
+
+.habilidad-cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.9rem;
+}
+
+.habilidad-numero {
+  color: var(--accent-2);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 0.85rem;
+}
+
+.habilidad-nivel {
+  padding: 0.15rem 0.6rem;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 181, 71, 0.4);
+  color: var(--accent);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.habilidad-card h3 {
+  font-size: 1.1rem;
+}
+
+.habilidad-card p {
+  color: var(--muted);
+  font-size: 0.9rem;
+  min-height: 2.9rem;
+  margin: 0.3rem 0 1rem;
+}
+
+.habilidad-barra {
+  height: 5px;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+}
+
+.habilidad-barra span {
+  display: block;
+  height: 100%;
+  border-radius: 5px;
+  background: linear-gradient(90deg, var(--accent-2), var(--accent));
+}

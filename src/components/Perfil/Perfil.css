@@ -1,0 +1,89 @@
+.perfil {
+  background: var(--bg-alt);
+}
+
+.perfil-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 1.4rem;
+}
+
+.perfil-card {
+  padding: clamp(1.4rem, 3vw, 2.2rem);
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+}
+
+.perfil-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: var(--accent);
+}
+
+.perfil-card > p {
+  color: var(--muted);
+  margin-bottom: 0.9rem;
+}
+
+.perfil-etiquetas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.2rem;
+}
+
+.perfil-etiquetas span {
+  padding: 0.3rem 0.8rem;
+  border-radius: 99px;
+  border: 1px solid rgba(255, 181, 71, 0.35);
+  background: rgba(255, 181, 71, 0.07);
+  color: var(--accent);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.linea-tiempo {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.linea-item {
+  position: relative;
+  padding-left: 1.3rem;
+  border-left: 2px solid rgba(76, 201, 240, 0.4);
+}
+
+.linea-item::before {
+  content: '';
+  position: absolute;
+  left: -6px;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--accent-2);
+}
+
+.linea-periodo {
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--accent-2);
+}
+
+.linea-item h4 {
+  margin: 0.2rem 0;
+}
+
+.linea-item p {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+@media (max-width: 850px) {
+  .perfil-grid {
+    grid-template-columns: 1fr;
+  }
+}

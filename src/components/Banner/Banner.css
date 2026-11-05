@@ -1,0 +1,124 @@
+.banner {
+  position: relative;
+  min-height: calc(100vh - 62px);
+  display: flex;
+  align-items: center;
+  padding: 4rem 5%;
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 85% 20%, rgba(76, 201, 240, 0.14), transparent 45%),
+    radial-gradient(circle at 10% 90%, rgba(255, 181, 71, 0.12), transparent 40%),
+    var(--bg);
+}
+
+.banner-contenido {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.banner-etiqueta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid var(--line);
+  border-radius: 99px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+.banner-punto {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 10px var(--accent);
+}
+
+.banner-saludo {
+  margin-top: 1.6rem;
+  color: var(--accent-2);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.banner-nombre {
+  font-size: clamp(2.6rem, 7vw, 5rem);
+  line-height: 1.05;
+  margin: 0.4rem 0 1rem;
+}
+
+.banner-nombre span {
+  color: var(--accent);
+}
+
+.banner-subtitulo {
+  font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.banner-texto {
+  max-width: 580px;
+  margin-top: 1rem;
+  color: var(--muted);
+}
+
+.banner-botones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.btn {
+  padding: 0.85rem 1.5rem;
+  border-radius: 10px;
+  font-weight: 700;
+  transition: transform 0.2s, background 0.2s, border-color 0.2s;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+.btn-primario {
+  background: var(--accent);
+  color: #1a1204;
+}
+
+.btn-secundario {
+  border: 1px solid var(--line);
+}
+
+.btn-secundario:hover {
+  border-color: var(--accent-2);
+  color: var(--accent-2);
+}
+
+.banner-tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  list-style: none;
+}
+
+.banner-tecnologias li {
+  padding: 0.3rem 0.85rem;
+  border-radius: 99px;
+  background: rgba(76, 201, 240, 0.08);
+  border: 1px solid rgba(76, 201, 240, 0.25);
+  color: var(--accent-2);
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+@media (max-width: 560px) {
+  .btn {
+    width: 100%;
+    text-align: center;
+  }
+}
